@@ -23,7 +23,7 @@ def hbnb():
 
 
 @app.route('/c/<text>')
-def hbnb(text):
+def cis(text):
     """Show the argument of url"""
     return('C {}'.format(text.replace('_', ' ')))
 
