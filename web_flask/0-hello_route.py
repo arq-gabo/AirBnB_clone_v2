@@ -12,7 +12,8 @@ app.url_map.strict_slashes = False
 
 @app.route('/')
 def hello():
-    return('Hola HBNB!')
+    """Show Hello HBNB! in the index page"""
+    return('Hello HBNB!')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=False)
