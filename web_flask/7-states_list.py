@@ -19,6 +19,7 @@ def displayStates():
     all_states = storage.all("State")
     return(render_template('7-states_list.html', State=all_states))
 
+
 @app.teardown_appcontext
 def close(exception=None):
     """Close Method"""
