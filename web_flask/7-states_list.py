@@ -17,7 +17,7 @@ app.url_map.strict_slashes = False
 def displayStates():
     """Show States"""
     all_states = storage.all("State")
-    return(render_template(7-states_list.html, State=all_states))
+    return(render_template('7-states_list.html', State=all_states))
 
 @app.teardown_appcontext
 def close(exception=None):
