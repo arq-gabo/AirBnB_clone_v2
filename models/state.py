@@ -22,7 +22,7 @@ class State(BaseModel, Base):
         def cities(self):
             """ Get cities """
             __cities = []
-            for key, value in models.storage.all().itmes():
+            for key, value in models.storage.all().items():
                 if 'City' in key and value.state_id == self.id:
                     __cities.append(value)
             return __cities
